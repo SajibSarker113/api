@@ -6,6 +6,23 @@
     <title>api</title>
 </head>
 <body>
-    <h1>api</h1>
+    <h1>JSON (Javascript Object Notation)</h1>
+    <script>
+        
+        const user = {
+            id: 235, 
+            name: 'jabbar Ali',
+            lover: {
+                name: 'Jamila',
+                favFood: 'Pizza'
+            },
+            friendsAge: [12, 45, 36],
+            friends: ['Kamal', 'jamal', 'Tomal'] };
+        const userJson = JSON.stringify(user);
+        console.log(userJson);
+        const userFromJson = JSON.parse(userJson);
+        console.log(userFromJson);
+
+    </script>
 </body>
 </html>
