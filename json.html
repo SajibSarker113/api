@@ -21,10 +21,10 @@
         function displayUser(users){
             const userNames = users.map(x => x.username);
         for (let i = 0; i < userNames.length; i++) {
-            const username = userNames[i];
+            const userSepName = userNames[i];
             const ul = document.getElementById('users-container');
             const li = document.createElement('li');
-            li.innerText = username;
+            li.innerText = userSepName;
             ul.appendChild(li);
             
         }
